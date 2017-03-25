@@ -1,0 +1,29 @@
+github
+comporser
+slim framework
+ionic v2
+type script
+sdk android
+
+ionic view 
+firebase
+
+archivo readme --> que se hizo 
+
+3 tp 
+1er parcial tp individual
+2do parcial tp grupal
+
+trello
+
+
+tp gestion de alarmas 7f6bf1f7
+
+traer abm usuarios con login
+slim put post get y delete
+
+Adaptar el segundo parcial del cuatri pasado a put y delete
+ y ver si puedo hacer andar abm persona con login 
+
+
+ extencion clear cache i
