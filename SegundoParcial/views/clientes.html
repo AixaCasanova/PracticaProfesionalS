@@ -1,0 +1,13 @@
+<div ng-if="ver==true" id="divlogin">   
+  	<h3>Compradores</h3>
+ 
+	<input type="button" ui-sref="AltaCliente" style="color:black" name="AltaCliente" value="Nuevo cliente"><br><br>
+  	
+  	<div ui-grid="gridOptionsClientes" class="myGrid"></div>
+	
+	<br><br>Tabla con directivas:<br><br>
+	
+	<dir-tabla-comp></dir-tabla-comp>
+ 
+ </div>
+ <div ng-if="ver!=true" id="divlogin"><center><h1>Debe loguearse!!</h1></center></div>

@@ -1,0 +1,6 @@
+
+para probar en postman
+http://localhost:8026/PracticaProfesionalS/SegundoParcial/ws/login/vend@vend.com  (post)
+
+http://localhost:8026/PracticaProfesionalS/SegundoParcial/ws/usuarios (get)
+

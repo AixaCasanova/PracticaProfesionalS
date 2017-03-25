@@ -1,0 +1,119 @@
+<!doctype html>
+<html class="no-js"> 
+  <head>
+
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+        <style type="text/css">
+          .myGrid {
+              width: 100%;
+              height: 300px;
+            }
+
+        </style>
+ 
+        <link rel="stylesheet" href="./bower_components/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="bower_components/angular-ui-grid/ui-grid.min.css">
+               <script src="bower_components/bootstrap/dist/js/jquery.js"></script>
+     <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-ui-grid/ui-grid.min.js"></script>
+    <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="bower_components/pdfmake/build/pdfmake.min.js"></script>
+    <script src="bower_components/pdfmake/build/vfs_fonts.js"></script>
+    <script src="bower_components/ngmap/build/scripts/ng-map.min.js"></script>
+    <script src="bower_components/satellizer/dist/satellizer.js"></script>
+    <script src="bower_components/satellizer/dist/satellizer.min.js"></script>
+    <script src="scripts/app.js"></script>
+    
+  </head>
+  <body ng-app="app">
+     
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+  <div class="container">
+     
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Segundo Parcial</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Segundo Parcial </a>
+    </div>
+ 
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+                  
+                    <li><a ui-sref="login">login</a></li> 
+                    
+                    <div ng-if="SeVe" class="nav navbar-nav">
+                     
+                      <div ng-if="esAdmin" class="nav navbar-nav"> 
+                        <li><a ui-sref="usuarios">usuarios</a></li> 
+                      
+                      </div>
+                      
+                      <div ng-if="esVend" class="nav navbar-nav"> 
+                  
+                      </div>                    
+                      
+                      <li><a ui-sref="productos">productos</a></li> 
+                      <li><h4><div align="right"  style="color:white">{{userAVer}}</div></h4></li>
+                    </div>
+                    
+              
+
+      </ul>
+
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+
+</nav>
+<br><br><br><br>
+    <div class="container" ui-view></div>
+
+
+
+
+
+ 
+    <!-- controllers -->
+    <script src="scripts/controllers/CtrolLogin.js"></script>
+    <script src="scripts/controllers/CtrolUsuario.js"></script>
+    <script src="scripts/controllers/CtrolProductos.js"></script>
+ 
+   
+
+ 
+    <!-- directiva -->
+    <script src="scripts/directives/Directivas.js"></script>
+
+    <!-- services -->
+    <script src="scripts/services/data.js"></script> 
+    <script src="scripts/services/filtros.js"></script>
+   
+    <script src="scripts/services/usuarios/ServUsuario.js"></script> 
+    <script src="scripts/services/usuarios/ServUsuarioBase.js"></script> 
+    <script src="scripts/services/usuarios/Factory_bdd.js"></script> 
+
+     
+
+    <script src="scripts/services/login/Servlogin.js"></script> 
+    <script src="scripts/services/login/ServloginBase.js"></script> 
+    <script src="scripts/services/login/FactorybddLogin.js"></script> 
+
+    <script src="scripts/services/productos/ServProducto.js"></script> 
+    <script src="scripts/services/productos/ServProductoBase.js"></script> 
+    <script src="scripts/services/productos/FactorybddProducto.js"></script>
+
+   
+
+
+</body>
+</html>

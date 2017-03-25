@@ -1,0 +1,20 @@
+ 
+<form id="frm" name="frm">
+	<center>
+
+		Nombre: <input type="text" name="nombre" ng-model="usuario.nombre" ><br><br>
+		Apellido:<input type="text" name="apellido" ng-model="usuario.apellido" ><br><br>
+		Mail:<input type="mail" name="mail" ng-model="usuario.mail"><br><br>
+		Password:<input type="password" name="password" ng-model="usuario.pass" ><br><br>
+		Tipo:<select ng-model="usuario.tipo"   >
+		 <option value="administrador">administrador</option>
+		  <option value="comprador">comprador</option>
+		   <option value="vendedor">vendedor</option>
+		</select><br><br> 
+		 
+		<input type="button" ng-click="AltaUs()" style="color:black" name="AltaUs" value="Dar de alta" > 
+		<input type="button" ng-click="Volver()" style="color:black" name="Volver" value="Volver" ><br><br>
+
+
+	</center>
+</form>

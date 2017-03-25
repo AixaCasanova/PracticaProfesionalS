@@ -1,0 +1,19 @@
+<table border="2">
+ 	<tr>
+ 		<th>Id</th>
+ 		<th>Nombre</th>
+ 		<th>Porcentaje %</th>
+ 		 <th ng-if="per!='comprador'">Modificar</th>
+ 		<th ng-if="per!='comprador'">Eliminar</th></tr>		
+		<tr ng-repeat="prod in listaProd">		 
+			<td>{{prod.id}}</td>
+			<td>{{prod.nombre}}</td>
+			<td>{{prod.porcentaje}}</td>
+				<td ng-if="per!='comprador'"><input type="button"  value="Modificar" ng-click="IrModificarP(prod)"></td>
+				<td ng-if="per!='comprador'"><input type="button"  value="Eliminar" ng-click="IrEliminarP(prod)"></td>
+			<td></td>  
+		</tr>  
+
+
+</table>
+

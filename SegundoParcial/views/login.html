@@ -1,0 +1,41 @@
+	 
+
+	<form id="frm" name="frm">
+<center>
+		<div ng-if="ver==true" id="divlogin">  
+			<div class="login">
+				<h1 >Login</h1> 
+				Mail:<input type="mail" style="color:black" name="mail" ng-model="usuario.mail" placeholder="mail" required><span style="color:red" ng-if="frm.mail.$invalid">*</span><br><br>
+				Nombre:<input type="text" style="color:black" name="nombre" ng-model="usuario.nombre" placeholder="Nombre" required><span style="color:red" ng-if="frm.nombre.$invalid">*</span><br><br>
+					Clave:<input type="password" style="color:black" name="pass" ng-model="usuario.password" required><span style="color:red" ng-if="frm.pass.$invalid">*</span><br><br>
+
+				<input type="button" ng-click="loguer()" style="color:black" name="registrar" value="Loguearse"  ng-disabled="frm.dni.$invalid || frm.pass.$invalid"><br><br>
+
+	  			<input type="button" ng-click="Test('administrador')" style="color:black" name="TestAdmin" value="TestAdmin "  >
+	  			<input type="button" ng-click="Test('vendedor')" style="color:black" name="TestVendedor" value="TestVendedor ">
+	  			<input type="button" ng-click="Test('comprador')" style="color:black" name="TestComprador" value="TestComprador "> 
+	  			<br><br>
+			</div>
+
+			
+			
+		</div>
+
+		<div ng-if ="ver!=true">
+		<br><br>
+		  <input type='button' style="color:black" value='desloguear'  ng-click="Desloguear()"> <br><br>
+		  </div> 
+		  
+	 
+
+ <br><br>
+ 
+ 
+ 			 
+ </center>
+	</form>
+
+	<div>
+  <!-- <h3>Ofertas</h3>
+  <div ui-grid="gridOptionsUnaLogin" class="myGrid"></div>
+</div> -->
