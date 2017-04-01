@@ -15,6 +15,7 @@ export class grilla
 
     }
  
-   
+  Borrar (){}
+  Modificar(){} 
  
 }
