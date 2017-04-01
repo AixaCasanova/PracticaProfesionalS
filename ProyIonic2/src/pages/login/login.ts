@@ -16,17 +16,16 @@ export class login
     }
  
     Unusuario = {};
-    
-
+   
     loguear()
     {
       
-        console.log(this.Unusuario['usuario']);
+        console.log(this.Unusuario);
         alert("usuario:"+this.Unusuario['usuario']+ "  password:"+this.Unusuario['password']);
     }
  
 }
-
+/*
 export class persona 
 {
 
@@ -34,4 +33,4 @@ export class persona
   password:string="";
   constructor(public navCtrl: NavController) {
 
-  }}
+  }}*/

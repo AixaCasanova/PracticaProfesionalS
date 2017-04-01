@@ -1,0 +1,4 @@
+ionic resources android (cada vez que se suve un recurso icon 192x192 y splash 2208 x2208
+ionic run android 
+
+https://www.photopea.com/ para los recursos
