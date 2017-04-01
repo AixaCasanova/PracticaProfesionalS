@@ -4,6 +4,8 @@ import { HomePage } from '../home/home';
 import { AboutPage } from '../about/about';
 import { ContactPage } from '../contact/contact';
 import { login } from '../login/login';
+import { grilla } from '../grilla/grilla';
+
 @Component({
   templateUrl: 'tabs.html'
 })
@@ -14,7 +16,7 @@ export class TabsPage {
   tab2Root: any = AboutPage;
   tab3Root: any = ContactPage;
   tab4Root: any = login;
-
+  tab5Root: any = grilla;
   constructor() {
 
   }
