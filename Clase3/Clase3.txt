@@ -2,3 +2,9 @@ ionic resources android (cada vez que se suve un recurso icon 192x192 y splash 2
 ionic run android 
 
 https://www.photopea.com/ para los recursos
+https://ionicframework.com/docs/resources/
+
+aca queda la apk C:\xampp2\htdocs\PracticaProfesionalS\ProyIonic2\platforms\android\build\outputs\
+
+
+chrome://inspect/#devices
